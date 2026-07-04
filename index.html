@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="We design and develop fast, responsive, secure, and SEO-friendly websites that help businesses attract more customers, increase credibility, and generate more leads.">
+    <meta name="keywords"
+        content="web development, full stack, MERN stack, website design, custom web applications, e-commerce, SEO, responsive websites">
+    <meta name="author" content="DevCraft Studio">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="DevCraft Studio — Modern Web Development Agency">
+    <meta property="og:description"
+        content="We build fast, responsive, secure, and SEO-friendly websites that help businesses grow online.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>DevCraft Studio — Modern Web Development Agency | Full Stack &amp; MERN Stack</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Theme: prevent FOUC -->
+    <script>
+        (function () {
+            var t = localStorage.getItem('theme');
+            if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+</head>
+
+
+<body>
+
+    <!-- ==================== LOADER ==================== -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <div class="loader-logo">
+                <span class="loader-bracket">&lt;</span>
+                <span class="loader-text">APX</span>
+                <span class="loader-bracket">/&gt;</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SCROLL PROGRESS ==================== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span><span class="logo-name">APX Labs</span><span
+                    class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#tech-stack" class="nav-link">Technologies</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="btn-primary nav-cta">
+                <i class='bx bx-calendar'></i>
+                Get Free Consultation
+            </a>
+
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+                <span class="theme-toggle-track">
+                    <i class='bx bx-sun theme-icon theme-icon--sun'></i>
+                    <i class='bx bx-moon theme-icon theme-icon--moon'></i>
+                    <span class="theme-toggle-thumb"></span>
+                </span>
+            </button>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="orb orb-1" data-speed="2"></div>
+            <div class="orb orb-2" data-speed="3"></div>
+            <div class="orb orb-3" data-speed="1.5"></div>
+            <div class="orb orb-4" data-speed="2.5"></div>
+            <div class="grid-bg"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge fade-up">
+                    <span class="badge-dot"></span>
+                    🚀 Full Stack Web Development • MERN Stack • Responsive Websites
+                </div>
+
+                <h1 class="hero-title fade-up" data-delay="100">
+                    Building Modern Websites That <span class="gradient-text">Grow Your Business.</span>
+                </h1>
+
+                <p class="hero-subtitle fade-up" data-delay="200">
+                    We design and develop fast, responsive, secure, and SEO-friendly websites that help businesses
+                    attract more customers, increase credibility, and generate more leads.
+                </p>
+
+                <div class="hero-actions fade-up" data-delay="300">
+                    <a href="#contact" class="btn-primary btn-lg">
+                        <i class='bx bx-rocket'></i>
+                        Start Your Project
+                    </a>
+                    <a href="#portfolio" class="btn-secondary btn-lg">
+                        <i class='bx bx-briefcase'></i>
+                        View Our Work
+                    </a>
+                </div>
+
+                <!-- <div class="hero-stats fade-up" data-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-number counter" data-target="50" data-suffix="+">0</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number counter" data-target="40" data-suffix="+">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number counter" data-target="14" data-suffix=" Days">0</span>
+                        <span class="stat-label">Avg. Delivery Time</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number counter" data-target="99" data-suffix="%">0</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="hero-visual fade-up" data-delay="200">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="browser-address">
+                            <i class='bx bx-lock-alt'></i>
+                            <span>www.yourbusiness.com</span>
+                        </div>
+                    </div>
+                    <div class="browser-body">
+                        <img src="hero_dashboard(2).png" alt="Modern web dashboard mockup" loading="eager" width="600"
+                            height="400">
+                    </div>
+                </div>
+
+                <!-- Floating UI Cards -->
+                <div class="floating-card floating-card-1">
+                    <div class="floating-icon floating-icon-green">
+                        <i class='bx bx-trending-up'></i>
+                    </div>
+                    <div class="floating-text">
+                        <span class="floating-label">Traffic Growth</span>
+                        <span class="floating-value">+147%</span>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-2">
+                    <div class="floating-icon floating-icon-blue">
+                        <i class='bx bx-bar-chart-alt-2'></i>
+                    </div>
+                    <div class="floating-text">
+                        <span class="floating-label">Conversions</span>
+                        <span class="floating-value">+89%</span>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-3">
+                    <div class="floating-icon floating-icon-purple">
+                        <i class='bx bx-check-shield'></i>
+                    </div>
+                    <div class="floating-text">
+                        <span class="floating-label">Performance</span>
+                        <span class="floating-value">98/100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRUSTED BY ==================== -->
+    <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-label fade-up">Trusted by Growing Businesses</p>
+            <div class="trusted-logos">
+                <div class="trusted-track">
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-store-alt'></i> Local Business</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-food-menu'></i> Restaurant</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-hotel'></i> Hotel</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-book-reader'></i> Academy</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-plus-medical'></i> Healthcare</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-shopping-bag'></i> E-Commerce</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-buildings'></i> Corporate</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-user'></i> Freelancer</div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-store-alt'></i> Local Business</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-food-menu'></i> Restaurant</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-hotel'></i> Hotel</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-book-reader'></i> Academy</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-plus-medical'></i> Healthcare</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-shopping-bag'></i> E-Commerce</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-buildings'></i> Corporate</div>
+                    </div>
+                    <div class="trusted-logo-item">
+                        <div class="logo-placeholder"><i class='bx bx-user'></i> Freelancer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge fade-up">What We Offer</span>
+                <h2 class="section-title fade-up" data-delay="100">
+                    Services That Drive <span class="gradient-text">Real Results</span>
+                </h2>
+                <p class="section-subtitle fade-up" data-delay="200">
+                    From concept to launch, we deliver end-to-end web development solutions tailored to your business
+                    goals. Every project is built with performance, security, and growth in mind.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-up" data-delay="0">
+                    <div class="service-icon">
+                        <i class='bx bx-buildings'></i>
+                    </div>
+                    <h3>Business Websites</h3>
+                    <p>Professional, responsive websites that establish your business's online presence and build
+                        instant credibility with visitors.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <div class="service-card fade-up" data-delay="50">
+                    <div class="service-icon service-icon-purple">
+                        <i class='bx bx-code-block'></i>
+                    </div>
+                    <h3>Custom Web Applications</h3>
+                    <p>Tailor-made web applications designed to streamline your business operations, from booking
+                        systems to customer portals.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <div class="service-card fade-up" data-delay="100">
+                    <div class="service-icon service-icon-cyan">
+                        <i class='bx bx-cart'></i>
+                    </div>
+                    <h3>E-Commerce Development</h3>
+                    <p>Modern, secure online stores with seamless checkout experiences that make it easy for customers
+                        to browse and buy.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <div class="service-card fade-up" data-delay="150">
+                    <div class="service-icon service-icon-green">
+                        <i class='bx bx-rocket'></i>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>High-converting landing pages designed to capture leads, drive sign-ups, and turn visitors into
+                        paying customers.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <div class="service-card fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <i class='bx bx-user-circle'></i>
+                    </div>
+                    <h3>Portfolio Websites</h3>
+                    <p>Stunning personal branding websites that showcase your work, skills, and expertise to attract new
+                        opportunities.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <div class="service-card fade-up" data-delay="250">
+                    <div class="service-icon service-icon-purple">
+                        <i class='bx bx-refresh'></i>
+                    </div>
+                    <h3>Website Redesign</h3>
+                    <p>Transform outdated websites into modern, fast, mobile-friendly experiences that reflect your
+                        brand's evolution.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <div class="service-card fade-up" data-delay="300">
+                    <div class="service-icon service-icon-cyan">
+                        <i class='bx bx-server'></i>
+                    </div>
+                    <h3>API Development</h3>
+                    <p>Scalable RESTful APIs and backend integrations that power your applications with reliable data
+                        and functionality.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <div class="service-card fade-up" data-delay="350">
+                    <div class="service-icon service-icon-green">
+                        <i class='bx bx-wrench'></i>
+                    </div>
+                    <h3>Website Maintenance</h3>
+                    <p>Continuous updates, security patches, and performance monitoring to keep your website running
+                        smoothly 24/7.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <!-- <div class="service-card fade-up" data-delay="400">
+                    <div class="service-icon">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>On-page SEO best practices that improve your search engine rankings and help potential customers
+                        find you online.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div> -->
+
+                <div class="service-card fade-up" data-delay="450">
+                    <div class="service-icon service-icon-purple">
+                        <i class='bx bx-cloud-upload'></i>
+                    </div>
+                    <h3>Hosting &amp; Deployment</h3>
+                    <p>Reliable hosting setup, domain configuration, and deployment support so your website is live,
+                        fast, and secure.</p>
+                    <a href="#contact" class="service-link">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TECH STACK ==================== -->
+    <section class="tech-stack" id="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge fade-up">Our Tech Stack</span>
+                <h2 class="section-title fade-up" data-delay="100">
+                    Built With <span class="gradient-text">Modern Technologies</span>
+                </h2>
+                <p class="section-subtitle fade-up" data-delay="200">
+                    We use industry-leading tools and frameworks to build fast, scalable, and maintainable web
+                    applications.
+                </p>
+            </div>
+
+            <div class="tech-tabs fade-up" data-delay="300">
+                <button class="tab-btn active" data-category="frontend">
+                    <i class='bx bx-palette'></i> Frontend
+                </button>
+                <button class="tab-btn" data-category="backend">
+                    <i class='bx bx-server'></i> Backend
+                </button>
+                <button class="tab-btn" data-category="database">
+                    <i class='bx bx-data'></i> Database
+                </button>
+                <button class="tab-btn" data-category="tools">
+                    <i class='bx bx-wrench'></i> Tools &amp; Deployment
+                </button>
+            </div>
+
+            <div class="tech-categories">
+                <div class="tech-category active" data-category="frontend">
+                    <div class="tech-grid">
+                        <div class="tech-card fade-up">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="50">
+                            <i class="devicon-nextjs-plain"></i>
+                            <span>Next.js</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="100">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="150">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="200">
+                            <i class="devicon-tailwindcss-original colored"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="250">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="300">
+                            <i class="devicon-typescript-plain colored"></i>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category" data-category="backend">
+                    <div class="tech-grid">
+                        <div class="tech-card fade-up">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="50">
+                            <i class="devicon-express-original"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="100">
+                            <div class="tech-icon-custom">
+                                <i class='bx bx-transfer-alt'></i>
+                            </div>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category" data-category="database">
+                    <div class="tech-grid">
+                        <div class="tech-card fade-up">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="50">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category" data-category="tools">
+                    <div class="tech-grid">
+                        <div class="tech-card fade-up">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="50">
+                            <i class="devicon-github-original"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="100">
+                            <i class="devicon-postman-plain colored"></i>
+                            <span>Postman</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="150">
+                            <i class="devicon-figma-plain colored"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="200">
+                            <i class="devicon-vercel-original"></i>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="250">
+                            <i class="devicon-netlify-plain colored"></i>
+                            <span>Netlify</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="300">
+                            <div class="tech-icon-custom">
+                                <i class='bx bx-globe'></i>
+                            </div>
+                            <span>Render</span>
+                        </div>
+                        <div class="tech-card fade-up" data-delay="350">
+                            <i class="devicon-cloudflare-plain colored"></i>
+                            <span>Cloudflare</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge fade-up">Why Choose Us</span>
+                <h2 class="section-title fade-up" data-delay="100">
+                    What Sets Us <span class="gradient-text">Apart</span>
+                </h2>
+                <p class="section-subtitle fade-up" data-delay="200">
+                    We don't just build websites — we craft digital experiences that deliver measurable results for your
+                    business.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-up" data-delay="0">
+                    <div class="feature-icon">
+                        <i class='bx bx-dollar-circle'></i>
+                    </div>
+                    <h3>Affordable Solutions</h3>
+                    <p>Premium quality web development at honest, competitive pricing designed for growing businesses.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-up" data-delay="50">
+                    <div class="feature-icon feature-icon-purple">
+                        <i class='bx bx-palette'></i>
+                    </div>
+                    <h3>Modern UI/UX</h3>
+                    <p>Beautiful, intuitive designs that follow the latest trends and best practices in user experience.
+                    </p>
+                </div>
+
+                <div class="feature-card fade-up" data-delay="100">
+                    <div class="feature-icon feature-icon-cyan">
+                        <i class='bx bx-mobile-alt'></i>
+                    </div>
+                    <h3>Mobile Responsive</h3>
+                    <p>Every website we build looks and works perfectly on phones, tablets, and desktops.</p>
+                </div>
+
+                <!-- <div class="feature-card fade-up" data-delay="150">
+                    <div class="feature-icon feature-icon-green">
+                        <i class='bx bx-search-alt-2'></i>
+                    </div>
+                    <h3>SEO Friendly</h3>
+                    <p>Built-in search engine optimization to help your website rank higher and get found by customers.
+                    </p>
+                </div> -->
+
+                <div class="feature-card fade-up" data-delay="200">
+                    <div class="feature-icon">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                    <h3>Clean &amp; Scalable Code</h3>
+                    <p>Well-structured, maintainable code that makes future updates and feature additions seamless.</p>
+                </div>
+
+                <div class="feature-card fade-up" data-delay="250">
+                    <div class="feature-icon feature-icon-purple">
+                        <i class='bx bx-bolt-circle'></i>
+                    </div>
+                    <h3>Fast Performance</h3>
+                    <p>Optimized for speed with fast load times that keep visitors engaged and reduce bounce rates.</p>
+                </div>
+
+                <div class="feature-card fade-up" data-delay="300">
+                    <div class="feature-icon feature-icon-cyan">
+                        <i class='bx bx-shield-quarter'></i>
+                    </div>
+                    <h3>Secure Development</h3>
+                    <p>Security best practices built in from day one — protecting your website and your users' data.</p>
+                </div>
+
+                <div class="feature-card fade-up" data-delay="350">
+                    <div class="feature-icon feature-icon-green">
+                        <i class='bx bx-headphone'></i>
+                    </div>
+                    <h3>Reliable Post-Launch Support</h3>
+                    <p>We don't disappear after launch. Count on us for ongoing maintenance, updates, and technical
+                        support.</p>
+                </div>
+
+                <div class="feature-card fade-up" data-delay="400">
+                    <div class="feature-icon">
+                        <i class='bx bx-conversation'></i>
+                    </div>
+                    <h3>Transparent Communication</h3>
+                    <p>Regular updates, clear timelines, and honest conversations throughout every project.</p>
+                </div>
+
+                <div class="feature-card fade-up" data-delay="450">
+                    <div class="feature-icon feature-icon-purple">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                    <h3>Client-Focused Approach</h3>
+                    <p>Your goals drive our work. We listen, collaborate, and deliver solutions that truly fit your
+                        needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DEVELOPMENT PROCESS ==================== -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge fade-up">How We Work</span>
+                <h2 class="section-title fade-up" data-delay="100">
+                    Our Development <span class="gradient-text">Process</span>
+                </h2>
+                <p class="section-subtitle fade-up" data-delay="200">
+                    A proven, structured approach that ensures every project is delivered on time, on budget, and beyond
+                    expectations.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-step fade-up" data-delay="0">
+                    <div class="step-number">1</div>
+                    <div class="step-connector"></div>
+                    <div class="step-content glass">
+                        <div class="step-icon">
+                            <i class='bx bx-search-alt'></i>
+                        </div>
+                        <h3>Discovery</h3>
+                        <p>We start by understanding your business, goals, target audience, and what you want your
+                            website to achieve.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step fade-up" data-delay="100">
+                    <div class="step-number">2</div>
+                    <div class="step-connector"></div>
+                    <div class="step-content glass">
+                        <div class="step-icon step-icon-purple">
+                            <i class='bx bx-notepad'></i>
+                        </div>
+                        <h3>Planning</h3>
+                        <p>We map out the site architecture, features, and technical requirements into a clear project
+                            roadmap.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step fade-up" data-delay="200">
+                    <div class="step-number">3</div>
+                    <div class="step-connector"></div>
+                    <div class="step-content glass">
+                        <div class="step-icon step-icon-cyan">
+                            <i class='bx bx-pen'></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>We create modern, user-friendly designs that look great and guide visitors toward taking
+                            action.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step fade-up" data-delay="300">
+                    <div class="step-number">4</div>
+                    <div class="step-connector"></div>
+                    <div class="step-content glass">
+                        <div class="step-icon step-icon-green">
+                            <i class='bx bx-code-block'></i>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Our developers bring the design to life with clean, scalable code using modern technologies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-step fade-up" data-delay="400">
+                    <div class="step-number">5</div>
+                    <div class="step-connector"></div>
+                    <div class="step-content glass">
+                        <div class="step-icon">
+                            <i class='bx bx-check-circle'></i>
+                        </div>
+                        <h3>Testing</h3>
+                        <p>Rigorous testing across devices and browsers ensures everything works flawlessly before
+                            launch.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step fade-up" data-delay="500">
+                    <div class="step-number">6</div>
+                    <div class="step-connector"></div>
+                    <div class="step-content glass">
+                        <div class="step-icon step-icon-purple">
+                            <i class='bx bx-rocket'></i>
+                        </div>
+                        <h3>Deployment</h3>
+                        <p>We deploy your website to a reliable hosting platform and ensure everything runs smoothly in
+                            production.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step fade-up" data-delay="600">
+                    <div class="step-number">7</div>
+                    <div class="step-connector"></div>
+                    <div class="step-content glass">
+                        <div class="step-icon step-icon-cyan">
+                            <i class='bx bx-support'></i>
+                        </div>
+                        <h3>Ongoing Support</h3>
+                        <p>After launch, we provide continuous support, updates, and improvements to keep your site
+                            performing at its best.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO ==================== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge fade-up">Our Work</span>
+                <h2 class="section-title fade-up" data-delay="100">
+                    Featured <span class="gradient-text">Projects</span>
+                </h2>
+                <p class="section-subtitle fade-up" data-delay="200">
+                    A selection of websites and applications we've built for businesses across various industries.
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 — Featured -->
+                <div class="project-card project-card--featured fade-up" data-delay="0">
+                    <span class="project-badge"><i class='bx bx-star'></i> Featured Project</span>
+                    <div class="project-image">
+                        <img src="taxpro.png" alt="Business Website — Professional corporate website" loading="lazy"
+                            width="600" height="400"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-image-fallback">
+                            <i class='bx bx-image'></i>
+                            <!-- <span>Screenshot Coming Soon</span> -->
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://taxpro-online.netlify.app/" class="project-action-btn live-btn"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class='bx bx-link-external'></i> Live Demo
+                                </a>
+                                <!-- <a href="https://github.com/username/business-website"
+                                    class="project-action-btn github-btn" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class='bx bxl-github'></i> GitHub
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Business Website</h3>
+                        <p>Professional corporate website with a modern, conversion-focused design that increased client
+                            inquiries.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-up" data-delay="100">
+                    <div class="project-image">
+                        <img src="restaurant.png" alt="Restaurant Website — Online ordering and reservations"
+                            loading="lazy" width="600" height="400"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-image-fallback">
+                            <i class='bx bx-image'></i>
+                            <span>Screenshot Coming Soon</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://codewithsadee.github.io/grilli/" class="project-action-btn live-btn"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class='bx bx-link-external'></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Restaurant Website</h3>
+                        <p>Online ordering and table reservation system with a menu showcase and customer reviews
+                            integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">Html
+
+</Html></span>
+<span class="tag">CSS</span>
+<span class="tag">JavaScript</span>
+</div>
+</div>
+</div>
+
+<!-- Project 3 — Featured -->
+<div class="project-card project-card--featured fade-up" data-delay="200">
+    <span class="project-badge"><i class='bx bx-star'></i> Featured Project</span>
+    <div class="project-image">
+        <img src="cartlivo.png" alt="E-Commerce Store — Full-featured online shop" loading="lazy" width="600"
+            height="400" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="project-image-fallback">
+            <i class='bx bx-image'></i>
+            <span>Screenshot Coming Soon</span>
+        </div>
+        <div class="project-overlay">
+            <div class="project-actions">
+                <a href="https://cartlivo.netlify.app/" class="project-action-btn live-btn" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class='bx bx-link-external'></i> Live Demo
+                </a>
+                <!-- <a href="https://github.com/username/ecommerce-store"
+                                    class="project-action-btn github-btn" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class='bx bxl-github'></i> GitHub
+                                </a> -->
+            </div>
+        </div>
+    </div>
+    <div class="project-info">
+        <h3>E-Commerce Store</h3>
+        <p>Full-featured online store with Stripe payments, inventory management, and an admin
+            dashboard.</p>
+        <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Stripe</span>
+        </div>
+    </div>
+</div>
+
+<!-- Project 4
+<div class="project-card fade-up" data-delay="300">
+    <div class="project-image">
+        <img src="assets/projects/school-website.png" alt="School Website — Educational portal" loading="lazy"
+            width="600" height="400" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="project-image-fallback">
+            <i class='bx bx-image'></i>
+            <span>Screenshot Coming Soon</span>
+        </div>
+        <div class="project-overlay">
+            <div class="project-actions">
+                <a href="https://your-demo-link.com/school" class="project-action-btn live-btn" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class='bx bx-link-external'></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="project-info">
+        <h3>School Website</h3>
+        <p>Educational portal with student management, attendance tracking, and parent communication
+            tools.</p>
+        <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
+        </div>
+    </div>
+</div>
+
+Project 5 -->
+<!-- <div class="project-card fade-up" data-delay="400">
+    <div class="project-image">
+        <img src="assets/projects/healthcare-website.png" alt="Healthcare Website — Doctor appointment booking"
+            loading="lazy" width="600" height="400"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="project-image-fallback">
+            <i class='bx bx-image'></i>
+            <span>Screenshot Coming Soon</span>
+        </div>
+        <div class="project-overlay">
+            <div class="project-actions">
+                <a href="https://your-demo-link.com/healthcare" class="project-action-btn live-btn" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class='bx bx-link-external'></i> Live Demo
+                </a>
+                <a href="https://github.com/username/healthcare-website"
+                                    class="project-action-btn github-btn" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class='bx bxl-github'></i> GitHub
+                                </a>
+            </div>
+        </div>
+    </div>
+    <div class="project-info">
+        <h3>Healthcare Website</h3>
+        <p>Doctor appointment booking and patient portal with secure medical record access and
+            reminders.</p>
+        <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MySQL</span>
+        </div>
+    </div>
+</div> -->
+
+<!-- Project 6
+<div class="project-card fade-up" data-delay="500">
+    <div class="project-image">
+        <img src="assets/projects/corporate-website.png" alt="Corporate Website — Modern corporate presence"
+            loading="lazy" width="600" height="400"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="project-image-fallback">
+            <i class='bx bx-image'></i>
+            <span>Screenshot Coming Soon</span>
+        </div>
+        <div class="project-overlay">
+            <div class="project-actions">
+                <a href="https://your-demo-link.com/corporate" class="project-action-btn live-btn" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class='bx bx-link-external'></i> Live Demo
+                </a>
+                <a href="https://github.com/username/corporate-website"
+                                    class="project-action-btn github-btn" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class='bx bxl-github'></i> GitHub
+                                </a>
+            </div>
+        </div>
+    </div>
+    <div class="project-info">
+        <h3>Corporate Website</h3>
+        <p>Modern corporate site with team profiles, services showcase, and integrated blog platform.
+        </p>
+        <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">Node.js</span>
+        </div>
+    </div>
+</div> -->
+</div>
+</div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge fade-up">Testimonials</span>
+            <h2 class="section-title fade-up" data-delay="100">
+                What Our Clients <span class="gradient-text">Say</span>
+            </h2>
+        </div>
+
+        <div class="testimonial-placeholder glass fade-up" data-delay="200">
+            <div class="testimonial-icon">
+                <i class='bx bx-message-square-dots'></i>
+            </div>
+            <p class="testimonial-message">
+                Client testimonials will be showcased here as we complete successful projects. We believe in earning
+                trust through real results — not manufactured reviews.
+            </p>
+            <a href="#contact" class="btn-primary">
+                <i class='bx bx-rocket'></i>
+                Be Our Next Success Story
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PRICING ==================== -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge fade-up">Pricing</span>
+            <h2 class="section-title fade-up" data-delay="100">
+                Transparent <span class="gradient-text">Pricing Plans</span>
+            </h2>
+            <p class="section-subtitle fade-up" data-delay="200">
+                Clear, upfront pricing with no hidden fees. Every plan includes responsive design, SEO basics, and
+                post-launch support.
+            </p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card glass fade-up" data-delay="0">
+                <div class="pricing-header">
+                    <span class="plan-name">Landing Page Website/span>
+                        <p class="plan-description">Perfect for freelancers and personal brands</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="starting-from">Starting From</span>
+                    <span class="price">₹1,599</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class='bx bx-check'></i> Up to 1 Page</li>
+                    <li><i class='bx bx-check'></i> Responsive Design</li>
+                    <li><i class='bx bx-check'></i> Contact Form</li>
+                    <li><i class='bx bx-check'></i> Basic SEO Setup</li>
+                    <li><i class='bx bx-check'></i> 5 Days Delivery</li>
+                    <li><i class='bx bx-check'></i> 1 Month Free Support</li>
+                </ul>
+                <a href="#contact" class="btn-secondary pricing-cta">Get Started</a>
+            </div>
+
+            <div class="pricing-card glass fade-up" data-delay="100">
+                <div class="popular-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <span class="plan-name">Starter Website</span>
+                    <p class="plan-description">Ideal for growing local businesses</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="starting-from">Starting From</span>
+                    <span class="price">₹3,999</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class='bx bx-check'></i> Up to 4 Pages</li>
+                    <li><i class='bx bx-check'></i> Custom UI/UX Design</li>
+                    <li><i class='bx bx-check'></i> CMS Integration</li>
+                    <li><i class='bx bx-check'></i> Advanced SEO</li>
+                    <li><i class='bx bx-check'></i> Performance Optimization</li>
+                    <li><i class='bx bx-check'></i> 1 Month Free Support</li>
+                </ul>
+                <a href="#contact" class="btn-secondary pricing-cta">Get Started</a>
+            </div>
+
+            <div class="pricing-card glass fade-up" data-delay="200">
+                <div class="pricing-header">
+                    <span class="plan-name">Business/E-commerce Website</span>
+                    <p class="plan-description">For online stores and marketplaces</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="starting-from">Starting From</span>
+                    <span class="price">₹7,999</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class='bx bx-check'></i> Product Management</li>
+                    <li><i class='bx bx-check'></i> Payment Gateway</li>
+                    <li><i class='bx bx-check'></i> Order Tracking</li>
+                    <li><i class='bx bx-check'></i> Inventory System</li>
+                    <li><i class='bx bx-check'></i> Admin Dashboard</li>
+                    <li><i class='bx bx-check'></i> 2 Months Free Support</li>
+                </ul>
+                <a href="#contact" class="btn-secondary pricing-cta">Get Started</a>
+            </div>
+
+            <div class="pricing-card glass fade-up" data-delay="300">
+                <div class="pricing-header">
+                    <span class="plan-name">Custom Web App</span>
+                    <p class="plan-description">Tailor-made solutions for complex needs</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="starting-from">Starting From</span>
+                    <span class="price">₹xx,999</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class='bx bx-check'></i> Custom Architecture</li>
+                    <li><i class='bx bx-check'></i> Database Design</li>
+                    <li><i class='bx bx-check'></i> API Development</li>
+                    <li><i class='bx bx-check'></i> User Authentication</li>
+                    <li><i class='bx bx-check'></i> Admin Panel</li>
+                    <li><i class='bx bx-check'></i> 3 Months Free Support</li>
+                </ul>
+                <a href="#contact" class="btn-secondary pricing-cta">Get Started</a>
+            </div>
+
+            <!-- <div class="pricing-card glass fade-up" data-delay="400">
+                <div class="pricing-header">
+                    <span class="plan-name">Enterprise</span>
+                    <p class="plan-description">Large-scale projects with dedicated support</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="starting-from">Starting From</span>
+                    <span class="price">Custom</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class='bx bx-check'></i> Everything in Custom</li>
+                    <li><i class='bx bx-check'></i> Scalable Infrastructure</li>
+                    <li><i class='bx bx-check'></i> Priority Support</li>
+                    <li><i class='bx bx-check'></i> Performance Monitoring</li>
+                    <li><i class='bx bx-check'></i> Dedicated Project Manager</li>
+                    <li><i class='bx bx-check'></i> 12 Months Free Support</li>
+                </ul>
+                <a href="#contact" class="btn-secondary pricing-cta">Contact Us</a>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge fade-up">FAQ</span>
+            <h2 class="section-title fade-up" data-delay="100">
+                Frequently Asked <span class="gradient-text">Questions</span>
+            </h2>
+            <p class="section-subtitle fade-up" data-delay="200">
+                Got questions? We've got answers. Here are the most common things people ask us.
+            </p>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item glass fade-up" data-delay="0">
+                <button class="faq-question">
+                    <span>How long does it take to build a website?</span>
+                    <i class='bx bx-plus'></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Most projects take between 1 to 4 weeks depending on the scope and complexity. A simple
+                        business website can be ready in about a week, while more complex applications like
+                        e-commerce stores or custom web apps may take 3–4 weeks. We'll provide a clear timeline
+                        during our initial consultation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass fade-up" data-delay="100">
+                <button class="faq-question">
+                    <span>Do you provide hosting and domain setup?</span>
+                    <i class='bx bx-plus'></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! We help you choose the right hosting platform for your needs and handle the complete
+                        setup — including domain configuration, SSL certificates, and deployment. We work with
+                        reliable platforms like Vercel, Netlify, Render, and traditional hosting providers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass fade-up" data-delay="200">
+                <button class="faq-question">
+                    <span>Can you redesign my existing website?</span>
+                    <i class='bx bx-plus'></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely. We regularly help businesses modernize their outdated websites. We'll review your
+                        current site, understand what's working and what needs improvement, and deliver a fresh,
+                        modern design that better represents your brand and converts more visitors.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass fade-up" data-delay="300">
+                <button class="faq-question">
+                    <span>Do you offer ongoing maintenance and support?</span>
+                    <i class='bx bx-plus'></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, every project includes a free support period (ranging from 1 to 12 months depending on
+                        the plan). After that, we offer affordable monthly maintenance packages that include
+                        security updates, content changes, performance monitoring, and technical support.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass fade-up" data-delay="400">
+                <button class="faq-question">
+                    <span>Will my website work on mobile devices?</span>
+                    <i class='bx bx-plus'></i>
+                </button>
+                <div class="faq-answer">
+                    <p>100%. Every website we build is fully responsive and tested on all major devices —
+                        smartphones, tablets, laptops, and desktops. Mobile responsiveness isn't an add-on; it's a
+                        core part of our development process from day one.</p>
+                </div>
+            </div>
+
+            <div class="faq-item glass fade-up" data-delay="500">
+                <button class="faq-question">
+                    <span>Can I request changes after the website is live?</span>
+                    <i class='bx bx-plus'></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Of course! We understand that businesses evolve, and your website should evolve with them.
+                        Minor changes are typically included in your support period, and for larger updates, we'll
+                        provide a fair quote with a quick turnaround.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <span class="section-badge fade-up">About Us</span>
+                <h2 class="section-title about-title fade-up" data-delay="100">
+                    A Passionate Team Building <span class="gradient-text">Digital Experiences</span>
+                </h2>
+                <p class="about-text fade-up" data-delay="200">
+                    We're a focused web development team that believes every business — no matter how small —
+                    deserves a professional online presence. We started DevCraft Studio with a simple mission: to
+                    make high-quality web development accessible and affordable for local businesses and startups.
+                </p>
+                <p class="about-text fade-up" data-delay="300">
+                    We're not a massive corporation, and we don't pretend to be. What we offer is genuine expertise,
+                    personal attention, and an honest commitment to delivering websites that actually help your
+                    business grow. Every project we take on gets our full focus and best work.
+                </p>
+                <p class="about-text fade-up" data-delay="400">
+                    Our approach is built on transparency, reliability, and long-term relationships. We want to be
+                    the team you trust with your digital presence — not just for one project, but for years to come.
+                </p>
+
+                <div class="about-stats fade-up" data-delay="500">
+                    <div class="about-stat">
+                        <i class='bx bx-code-alt'></i>
+                        <div>
+                            <strong>Full Stack Expertise</strong>
+                            <span>Frontend to Backend</span>
+                        </div>
+                    </div>
+                    <div class="about-stat">
+                        <i class='bx bx-check-shield'></i>
+                        <div>
+                            <strong>Quality-First Approach</strong>
+                            <span>No shortcuts, no compromises</span>
+                        </div>
+                    </div>
+                    <div class="about-stat">
+                        <i class='bx bx-group'></i>
+                        <div>
+                            <strong>Client Partnerships</strong>
+                            <span>Long-term relationships</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-visual fade-up" data-delay="200">
+                <div class="about-image-wrapper">
+                    <div class="about-pattern"></div>
+                    <div class="about-code-block glass">
+                        <div class="code-header">
+                            <span class="code-dot code-dot-red"></span>
+                            <span class="code-dot code-dot-yellow"></span>
+                            <span class="code-dot code-dot-green"></span>
+                            <span class="code-filename">APX Labs.js</span>
+                        </div>
+                        <pre class="code-content"><code><span class="code-keyword">const</span> <span class="code-var">devCraft</span> = {
+  <span class="code-prop">mission</span>: <span class="code-string">"Build digital</span>
+    <span class="code-string">experiences that matter"</span>,
+  <span class="code-prop">values</span>: [
+    <span class="code-string">"Quality"</span>,
+    <span class="code-string">"Transparency"</span>,
+    <span class="code-string">"Reliability"</span>
+  ],
+  <span class="code-prop">focus</span>: <span class="code-string">"Your success"</span>,
+  <span class="code-method">build</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Something amazing"</span>;
+  }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge fade-up">Get In Touch</span>
+            <h2 class="section-title fade-up" data-delay="100">
+                Let's Build Something <span class="gradient-text">Great Together</span>
+            </h2>
+            <p class="section-subtitle fade-up" data-delay="200">
+                Ready to take your business online? Fill out the form below and we'll get back to you within 24
+                hours with a free consultation.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <form class="contact-form glass fade-up" data-delay="0" id="contactForm">
+                <h3 class="form-title">Send Us a Message</h3>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your Mobile Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="business">Business Name</label>
+                        <input type="text" id="business" name="business" placeholder="Your Business Name">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="projectType">Project Type *</label>
+                        <select id="projectType" name="projectType" required>
+                            <option value="" disabled selected>Select project type</option>
+                            <option value="business-website">Business Website</option>
+                            <option value="ecommerce">E-Commerce Store</option>
+                            <option value="custom-app">Custom Web Application</option>
+                            <option value="landing-page">Landing Page</option>
+                            <option value="portfolio">Portfolio Website</option>
+                            <option value="redesign">Website Redesign</option>
+                            <option value="maintenance">Website Maintenance</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="" disabled selected>Select budget range</option>
+                            <option value="5k-10k">₹5,000 – ₹10,000</option>
+                            <option value="10k-25k">₹10,000 – ₹25,000</option>
+                            <option value="25k-50k">₹25,000 – ₹50,000</option>
+                            <option value="50k+">₹50,000+</option>
+                            <option value="unsure">Not Sure Yet</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Project Details *</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="Tell us about your project, goals, and any specific requirements..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary btn-lg btn-full">
+                    <i class='bx bx-send'></i>
+                    Send Message
+                </button>
+
+                <div class="form-success" id="formSuccess">
+                    <i class='bx bx-check-circle'></i>
+                    <!-- <p>Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.
+                    </p> -->
+                </div>
+            </form>
+
+            <div class="contact-sidebar fade-up" data-delay="200">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Reach out to us directly through any of these channels. We typically respond within a few
+                        hours.</p>
+
+                    <div class="info-items">
+                        <a href="https://wa.me/919876543210" class="info-item" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="info-icon info-icon-green">
+                                <i class='bx bxl-whatsapp'></i>
+                            </div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>+91 81097 71525</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:[EMAIL_ADDRESS]" class="info-item">
+                            <div class="info-icon info-icon-blue">
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                            <div>
+                                <strong>Email</strong>
+                                <span>apx.labs.webdev@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+918109771525" class="info-item">
+                            <div class="info-icon info-icon-purple">
+                                <i class='bx bx-phone-call'></i>
+                            </div>
+                            <div>
+                                <strong>Phone</strong>
+                                <span>+91 81097 71525</span>
+                            </div>
+                        </a>
+
+                        <div class="info-item">
+                            <div class="info-icon info-icon-cyan">
+                                <i class='bx bx-map'></i>
+                            </div>
+                            <div>
+                                <strong>Office</strong>
+                                <span>Raigarh, Chhattisgarh, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-placeholder glass">
+                    <div class="map-content">
+                        <i class='bx bx-map-alt'></i>
+                        <p>Google Maps Integration</p>
+                        <span>Map will be embedded here Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span><span class="logo-name">DevCraft</span><span
+                        class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-desc">
+                    We design and develop modern, responsive websites that help businesses establish and grow their
+                    online presence. Quality, reliability, and results — that's what we deliver.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i
+                            class='bx bxl-twitter'></i></a>
+                    <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="#" aria-label="Dribbble" target="_blank" rel="noopener noreferrer"><i
+                            class='bx bxl-dribbble'></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tech-stack">Technologies</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Business Websites</a></li>
+                    <li><a href="#services">E-Commerce</a></li>
+                    <li><a href="#services">Custom Web Apps</a></li>
+                    <li><a href="#services">Landing Pages</a></li>
+                    <li><a href="#services">Website Redesign</a></li>
+                    <li><a href="#services">SEO Optimization</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Technologies</h4>
+                <ul>
+                    <li><a href="#tech-stack">React.js</a></li>
+                    <li><a href="#tech-stack">Next.js</a></li>
+                    <li><a href="#tech-stack">Node.js</a></li>
+                    <li><a href="#tech-stack">MongoDB</a></li>
+                    <li><a href="#tech-stack">Express.js</a></li>
+                    <li><a href="#tech-stack">Tailwind CSS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 DevCraft Studio. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init({
+        publicKey: "a_KZev8cyZETY0ogS",
+    });
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // 1. Show a beautiful confirmation modal using SweetAlert2
+        Swal.fire({
+            title: 'Confirm Your Enquiry',
+            text: "Are you sure you want to send this enquiry to our team? We'll review your request and contact you shortly.",
+            icon: 'question',
+            iconColor: '#7c3aed',
+            showCancelButton: true,
+            confirmButtonText: 'Send Enquiry',
+            cancelButtonText: 'Cancel',
+            buttonsStyling: false,
+            customClass: {
+                popup: 'swal-custom-popup',
+                title: 'swal-custom-title',
+                htmlContainer: 'swal-custom-text',
+                confirmButton: 'swal-custom-confirm-btn',
+                cancelButton: 'swal-custom-cancel-btn'
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // 2. Show loading spinner while EmailJS sends the email
+                Swal.fire({
+                    title: 'Sending Enquiry...',
+                    html: 'Please wait while we transmit your details.',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    showConfirmButton: false,
+                    buttonsStyling: false,
+                    customClass: {
+                        popup: 'swal-custom-popup',
+                        title: 'swal-custom-title',
+                        htmlContainer: 'swal-custom-text'
+                    },
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+
+                // 3. Disable the submit button during the request
+                const submitBtn = form.querySelector('button[type="submit"]');
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.style.opacity = '0.6';
+                    submitBtn.style.cursor = 'not-allowed';
+                }
+
+                // 4. Send via EmailJS
+                emailjs.send("service_rg5fc9v", "template_fjaqb2o", {
+                    name: document.getElementById("name").value,
+                    email: document.getElementById("email").value,
+                    phone: document.getElementById("phone").value,
+                    business: document.getElementById("business").value,
+                    projectType: document.getElementById("projectType").value,
+                    budget: document.getElementById("budget").value,
+                    message: document.getElementById("message").value
+                }).then(function () {
+                    // Enable button again
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = '';
+                        submitBtn.style.cursor = '';
+                    }
+
+                    // 5. Success popup
+                    Swal.fire({
+                        title: 'Success!',
+                        text: "Thank you! Your enquiry has been sent successfully. Our team will contact you within 24 hours.",
+                        icon: 'success',
+                        iconColor: '#22c55e',
+                        confirmButtonText: 'Great',
+                        buttonsStyling: false,
+                        customClass: {
+                            popup: 'swal-custom-popup',
+                            title: 'swal-custom-title',
+                            htmlContainer: 'swal-custom-text',
+                            confirmButton: 'swal-custom-confirm-btn'
+                        }
+                    });
+
+                    // 6. Reset the form
+                    form.reset();
+
+                }).catch(function (error) {
+                    console.error(error);
+
+                    // Enable button again
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = '';
+                        submitBtn.style.cursor = '';
+                    }
+
+                    // 7. Failure popup
+                    Swal.fire({
+                        title: 'Error!',
+                        text: "Failed to send your enquiry. Please try again later.",
+                        icon: 'error',
+                        iconColor: '#ef4444',
+                        confirmButtonText: 'Try Again',
+                        buttonsStyling: false,
+                        customClass: {
+                            popup: 'swal-custom-popup',
+                            title: 'swal-custom-title',
+                            htmlContainer: 'swal-custom-text',
+                            confirmButton: 'swal-custom-confirm-btn'
+                        }
+                    });
+                });
+            }
+        });
+    });
+</script>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
